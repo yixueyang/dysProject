@@ -11,3 +11,10 @@ ul,li{
   margin:0;
   list-style:none
 }
+input, button, select, textarea {
+  outline: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  background:none;
+  border:0px;
+}

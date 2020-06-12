@@ -1,9 +1,8 @@
 <template>
   <div id="enterFirst">
     <div class="backageImg" :style="{bottom:clientHeight+'px'}">
-      <span class="bottomBtn" v-if="this.keyNum == 5" @click="jumpNext">点我DIY你的爱豆
-         <i class="iconfont icon-Group"></i>
-      </span>
+      <div class="bottomBtn" v-if="this.keyNum == 5" @click="jumpNext">向全世界展示最好的德云社
+      </div>
     </div>
   </div>
 </template>
@@ -45,7 +44,7 @@ export default {
     },
   methods:{
     jumpNext(){
-      this.$router.push("/selectPropsPage/totalVIdeo")
+      this.$router.push("/homeFile/homePage")
     }
   }
 }
@@ -62,21 +61,23 @@ export default {
     .backageImg{
       height:100%;
       width:100%;
-      position: absolute;
-      overflow: hidden;
+     position: relative;
       background-image: url("../assets/enterImg/backageImg4.jpg") ;
       background-repeat:no-repeat;
       background-size: 100% 100%;
     }
     .bottomBtn{
-      width: 100%;
-      display: inline-block;
-      text-align: center;
-      position: absolute;
-      bottom: 40px;
+      width: 300px;
+      height: 25px;
       font-size: 25px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
       cursor: pointer;
-      .animation(bulingbulingText,2s,infinite);
+      .animation(bulingbulingText,1.5s,infinite);
     }
     .donghua(@DHname) {
       @-webkit-keyframes @DHname {

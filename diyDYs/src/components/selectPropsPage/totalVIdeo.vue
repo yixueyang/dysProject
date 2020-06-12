@@ -6,7 +6,10 @@
         <div class="timerShaft" ref="timerShaftRef" :style="{height:clientHeight+'px'}">
           <ul style="overflow: hidden">
             <li :style="{height:oneHeight+'px'}" v-for="(item) in shaftData" class="oneTimer">
-              {{headerDate.year}}-{{item}}
+              <div class="focusDiv" @mouseenter="enterFun(headerDate)" @mouseleave="outFun(headerDate)">
+                {{headerDate.year}}-{{item}}
+              </div>
+
             </li>
           </ul>
         </div>
@@ -51,6 +54,15 @@
           })
       },
       methods: {
+          //移出事件
+        outFun(val){
+
+        },
+          //移入事件
+
+        enterFun(){
+          //移入的时间点传给左边
+        },
         nowDate(val){
           this.headerDate = val
           console.log(val)
@@ -112,15 +124,16 @@
       height: 100%;
     }
    .timerShaft{
-     width: 25px;
+     width: 100%;
      height: 100%;
      display: flex;
      justify-content: center;
      align-items: center;
      overflow: hidden;
      .oneTimer{
-       width: 15px;
+       width: 105px;
        background-color: cadetblue;
+       cursor:pointer;
      }
      .circle{
        width: 25px;

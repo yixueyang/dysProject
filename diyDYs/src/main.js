@@ -3,11 +3,16 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import axios from 'axios'
+import VueResource from 'vue-resource'
+
+Vue.prototype.$axios = axios
+
 import '../src/common/css/commonCss.css'
 import './assets/iconfont/iconfont.css'
 Vue.config.productionTip = false
 
-
+Vue.use(VueResource)
 
 /* eslint-disable no-new */
 new Vue({
