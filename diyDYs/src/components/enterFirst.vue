@@ -37,9 +37,7 @@ export default {
         if(this.clientHeight<=0){
           this.keyNum ++;
           this.clientHeight = 100-this.keyNum;
-          console.log("回弹参数2",this.clientHeight,this.keyNum)
-        }
-          console.log("回弹参数1",this.clientHeight,speed)
+            }
          },50);
 
 
