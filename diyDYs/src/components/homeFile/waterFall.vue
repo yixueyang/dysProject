@@ -28,7 +28,7 @@
           },
       methods:{
         getWaterFall(){
-          this.$http.post('/getWaterFallInformation',{"id":1}).then((res)=>{
+          this.$http.post('http://10.206.228.248:3000/mock/131/getWaterImg',{"id":1}).then((res)=>{
             console.log("res",res)
           })
 

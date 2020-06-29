@@ -1,24 +1,21 @@
 <template>
 <div id="homePageClass">
   <div class="topMenu">
-    <div class = "menuStyle">
-      <div>德云社历史</div>
-      <div>德云社家谱</div>
-      <div>视频</div>
-      <div>关于我们</div>
-    </div>
-
+      <div class="cardClass topToDown">DYS历史</div>
+      <div class="cardClass upToTop">DYS家谱</div>
+      <div class="cardClass topToDown">DYS视频</div>
+      <div class="cardClass upToTop">关于我们</div>
   </div>
-  <div class="topSearch">
-    <div style="display: flex;justify-content: center">
-      <input type="text" class="inputClass">
-      <input type="submit" class="pickClass" value="点我">
-    </div>
-  </div>
-  <div class="fallStyle">
-    <waterFall ></waterFall>
-  </div>
-  <div class="ownInformation"></div>
+<!--  <div class="topSearch">-->
+<!--    <div style="display: flex;justify-content: center">-->
+<!--      <input type="text" class="inputClass">-->
+<!--      <input type="submit" class="pickClass" value="点我">-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="fallStyle">-->
+<!--    <waterFall ></waterFall>-->
+<!--  </div>-->
+<!--  <div class="ownInformation"></div>-->
   </div>
 </template>
 
@@ -37,20 +34,19 @@
   width: 100%;
   height: 100%;
   background-color: #F5F5F5;
+  
   .topMenu{
-    width: 100%;
-    height: 50px;
+    width:90%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    background-color: white;
-    margin-bottom: 3px;
-    .menuStyle{
-      width: 70%;
-      font-size: 16px;
-      display: flex;
-      justify-content: space-around;
-    }
+      .cardClass{
+        width: 100%;
+        height: 70%;
+        background-color: white;
+      }
+      .topToDown{
+      }
   }
   .topSearch{
     width: 100%;
