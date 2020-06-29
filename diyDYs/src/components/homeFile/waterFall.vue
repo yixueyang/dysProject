@@ -10,11 +10,6 @@
       <div class="item" v-for="item in dataList2" :key="item.id">{{item.text}}</div>
     </transition-group>
   </div>
-  <div class="col" ref="col3">
-    <transition-group name="list">
-      <div class="item" v-for="item in dataList3" :key="item.id">{{item.text}}</div>
-    </transition-group>
-  </div>
 </div>
 </template>
 
@@ -24,8 +19,7 @@
       data(){
           return{
             dataList1: [],
-            dataList2: [],
-            dataList3: [],
+            dataList2: []
           }
 
       },
@@ -45,8 +39,7 @@
 
 <style scoped>
 #waterFallCol{
-  width: 70%;
+  width: 100%;
   height: 100%;
-  border: 1px solid #bb4446;
 }
 </style>

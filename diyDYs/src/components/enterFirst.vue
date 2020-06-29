@@ -62,7 +62,7 @@ export default {
       height:100%;
       width:100%;
      position: relative;
-      background-image: url("../assets/enterImg/backageImg4.jpg") ;
+      // background-image: url("../assets/enterImg/backageImg4.jpg") ;
       background-repeat:no-repeat;
       background-size: 100% 100%;
     }

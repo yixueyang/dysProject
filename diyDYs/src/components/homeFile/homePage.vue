@@ -54,7 +54,7 @@
   }
   .topSearch{
     width: 100%;
-    height: 150px;
+    height: 110px;
     background-color: white;
     margin-bottom: 3px;
     display: flex;
